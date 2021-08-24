@@ -1,4 +1,5 @@
 _site
+.DS_Store
 .jekyll-cache
 .sass-cache
 .jekyll-metadata
@@ -6,6 +7,9 @@ Gemfile.lock
 _includes/tailwind.js
 node_modules
 yarn.lock
+.bundle/
+vendor/
+package-lock.json
 
 
 
