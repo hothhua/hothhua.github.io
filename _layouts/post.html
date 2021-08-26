@@ -1,6 +1,31 @@
 ---
 layout: default
 ---
+
+<article class="w-full max-w-none">
+  <head>
+    <h1 class="font-extrabold leading-tight text-4xl text-gray-900 mb-4">
+      {{ page.title | escape }}
+    </h1>
+    <time class="text-gray-500 text-sm">
+      Posted on {{page.date | date: '%b %d, %Y'}}
+    </time>
+  </head>
+  <div class="prose mt-4">
+    {% if page.image %}
+    <img
+      class="object-cover w-full h-80 rounded-xl"
+      src="{{site.baseurl}}{{page.image}}"
+    />
+
+    {% endif %}
+    <div class="mt-4">{{ content }}</div>
+  </div>
+</article>
+<!--
+---
+layout: default
+---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -36,3 +61,4 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+-->
