@@ -72,7 +72,7 @@ minima:
 # - about.md
 
 
-markdown: kramdown
+
 
 defaults:
   -
