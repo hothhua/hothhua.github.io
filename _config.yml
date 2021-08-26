@@ -71,7 +71,7 @@ minima:
 #header_pages:
 # - about.md
 
-
+markdown: kramdown
 
 
 defaults:
