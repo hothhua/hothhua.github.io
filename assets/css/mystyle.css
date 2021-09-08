@@ -1,4 +1,24 @@
 html .page-wrapper, body .page-wrapper {
 	border: 8px solid #091C84;
 	border-bottom: none;
-    }
+}
+
+html .page-wrapper:before, html .page-wrapper:after, body .page-wrapper:before, body .page-wrapper:after {
+    position: fixed;
+    z-index: 1200;
+    content: " ";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    width: 100%;
+    background: #091C84;
+}
+html .page-wrapper:before, body .page-wrapper:before {
+    top: 0;
+}
+html .page-wrapper:after, body .page-wrapper:after {
+    bottom: 0;
+    top: auto;
+}
