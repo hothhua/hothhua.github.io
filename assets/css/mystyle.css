@@ -22,3 +22,5 @@ html .page-wrapper:after, body .page-wrapper:after {
     bottom: 0;
     top: auto;
 }
+
+.site-header {background: url(/assets/img/topography.png) left top repeat;}
