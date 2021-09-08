@@ -1,0 +1,4 @@
+html .page-wrapper, body .page-wrapper {
+	border: 8px solid #091C84;
+	border-bottom: none;
+    }

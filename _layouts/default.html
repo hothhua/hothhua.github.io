@@ -3,18 +3,20 @@
 
   {%- include head.html -%}
 
-  <body class="bg-white antialiased text-gray-600 max-w-4xl mx-auto">
+  <body>
+      <div class="bg-white antialiased text-gray-600 max-w-full mx-auto page-wrapper">
 
-    {%- include header.html -%}
+      
+        {%- include header.html -%}
 
-    <main class="max-w-2xl mx-auto pt-8 lg:pt-16 px-8" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+        <main class="max-w-2xl mx-auto pt-8 lg:pt-16 px-8" aria-label="Content">
+          <div class="wrapper">
+            {{ content }}
+          </div>
+        </main>
+
+        {%- include footer.html -%}
       </div>
-    </main>
-
-    {%- include footer.html -%}
-
   </body>
 
 </html>
